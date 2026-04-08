@@ -35,7 +35,7 @@
 
 /* Botão */
 
-.btn-experimente{
+.btn-hero{
     
     background-color: #18542a;
     color: #ffefcb;
@@ -48,12 +48,57 @@
     margin-top: 20px;
 }
 
-.btn-experimente:hover{
+.btn-hero:hover{
     background-color:#1c913f;
     color:#ffefcb;
     height: 50px;
     transition: 0.8s;
    
+}
+
+/* Modal */
+
+/* Fonte do título do modal */
+.modal-brand {
+   /* Colocar fonte */
+}
+
+/* Estilo dos itens da lista de cupons */
+.cupom-img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tipo-cupom {
+    /* Colocar fonte */
+    font-weight: 900;
+    color: #e8a631;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+}
+
+.percentual-cupom {
+    /* Colocar fonte */
+    font-weight: 900;
+    color: #e8a631;
+    font-size: 1.5rem;
+}
+
+/* Responsividade do Modal */
+@media (max-width: 576px) {
+    .cupom-img {
+        width: 80px;
+    }
+    .texto-cupom {
+        font-size: 0.9rem;
+    }
+    .percentual-cupom {
+        font-size: 1.1rem;
+    }
+    .modal-brand {
+        font-size: 3rem ;
+    }
 }
 
 /* Seção cardápio (menu) */
@@ -64,7 +109,7 @@
 }
 
 .titulo-menu {
-    font-family: 'Abril Fatface', serif;
+    /* Colocar fonte */
     font-size: 4rem;
     text-align: center;
     margin-bottom: 30px;
@@ -174,7 +219,7 @@
 }
 
 
-.preco:hover{
+.preco:hover {
     background-color: #F9C068;
     transition: 0.5s;
 }
@@ -185,10 +230,148 @@
 }
 
 
+/* Seção Sobre nós (About Us) */
+
+.secao-sobre {
+    background-color: #b71c1c;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.titulo-sobre {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    color: #fca311;
+    margin-bottom: 60px;
+}
+
+.item-sobre {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.sobre-img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+
+.texto-sobre {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Seção localização */
+
+.secao-local {
+    background-color: #3d5a3a; 
+    color: #fef2da; 
+}
+
+.titulo-local {
+    /* COlocar fonte */
+    color: #fef2da;
+}
+
+.subtitulo-local {
+    /* Colocar fonte */
+    font-weight: 900;
+    color: #fca311; 
+    font-size: 2rem;
+}
+
+.texto-local {
+    /* Colocar fonte */
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/* Ajuste fino para o Bootstrap */
+.secao-local img {
+    border: 3px solid #fef2da22; 
+}
+
+
+/* --- Seção - Seja nosso parceiro --- */
+.secao-parceria{
+    background-color: #fef2da; 
+}
+
+.parceria-img{
+    height: 100%;
+    min-height: 400px; /* Garante visibilidade em telas menores */
+}
+
+.parceria-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.titulo-parceria{
+    color: #fca311; 
+     /*COlocar fonte  */
+    font-weight: 900;
+}
+
+.texto-parceria {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.4;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+    font-size: 0.85rem;
+}
+
+/* Botão cadastrar - cta */
+
+.btn-btn-cadastrar {
+    background-color: #3d5a3a; 
+    border: none;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+
+.btn-btn-cadastrar:hover {
+    transform: scale(1.05);
+    background-color: #2d452b;
+}
 
 
 
+/* Seção footer */
+
+.secao-footer {
+    background-color: #b71c1c; 
+}
+
+.brand-footer {
+    font-family: 'Abril Fatface', serif;
+    color: #e8a631; 
+}
 
 
 
+/* Estilo dos links da direita */
+.footer-link {
+    color: #e8a631;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.8rem;
+    display: block; /* Garante que fiquem um abaixo do outro */
+}
 
+.footer-link:hover {
+    color: #fca311;
+}
