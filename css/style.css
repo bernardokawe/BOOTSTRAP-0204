@@ -5,6 +5,40 @@
     box-sizing: border-box;
 }
 
+/* Fontes */
+
+/* 1. Fonte Display (Títulos e Cupons) */
+@font-face {
+    font-family: 'FrankyDunkey';
+    src: url('../assets/fonts/TheFrankyDunkey.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* 2. Fonte de Texto - Versão Regular */
+@font-face {
+    font-family: 'BigJohnPro';
+    src: url('../assets/fonts/BigJohnPro-Regular.otf') format('opentype');
+    font-weight: 400; /* Regular */
+}
+
+/* 3. Fonte de Texto - Versão Bold */
+@font-face {
+    font-family: 'BigJohnProBold';
+    src: url('../assets/fonts/BigJohnPro-Bold.otf') format('opentype');
+    font-weight: 700; /* Bold */
+}
+
+/* Navbar */
+.navbar .navbar-brand{
+    font-family: 'FrankyDunkey';
+    color: #b71c1c;
+    
+    
+}
+
+.navbar-nav{
+    font-family: 'BigJohnPro';
+}
 
 
 
@@ -27,6 +61,7 @@
 
 /* Titulo na imagem */
 .titulo-hero {
+    font-family: 'FrankyDunkey';
     font-size: 5rem;
     line-height: 0.9;
     text-transform: uppercase;
@@ -36,7 +71,7 @@
 /* Botão */
 
 .btn-hero{
-    
+    font-family: 'BigJohnProBold';
     background-color: #18542a;
     color: #ffefcb;
     font-weight: bold;
@@ -60,7 +95,7 @@
 
 /* Fonte do título do modal */
 .modal-brand {
-   /* Colocar fonte */
+   font-family: 'FrankyDunkey';
 }
 
 /* Estilo dos itens da lista de cupons */
@@ -71,7 +106,7 @@
 }
 
 .tipo-cupom {
-    /* Colocar fonte */
+    font-family: 'BigJohnPro';
     font-weight: 900;
     color: #e8a631;
     text-transform: lowercase;
@@ -79,7 +114,7 @@
 }
 
 .percentual-cupom {
-    /* Colocar fonte */
+    font-family: 'BigJohnPro';
     font-weight: 900;
     color: #e8a631;
     font-size: 1.5rem;
@@ -109,7 +144,7 @@
 }
 
 .titulo-menu {
-    /* Colocar fonte */
+    font-family: 'FrankyDunkey';
     font-size: 4rem;
     text-align: center;
     margin-bottom: 30px;
@@ -124,7 +159,8 @@
     text-align: center;
     font-weight: 800;
     padding: 10px 0;
-    
+    font-family: 'BigJohnPro';
+    font-size: 400;
     margin-bottom: 120px; 
 }
 
@@ -154,7 +190,7 @@
     color: white;
     text-align: center;
     height: 100%;
-
+    font-family: 'BigJohnPro';
     display: flex;
     flex-direction: column;
 
@@ -163,6 +199,7 @@
 }
 
 .menu-card p {
+    font-family: 'BigJohnPro';
     flex-grow: 1;
 }
 
@@ -202,7 +239,7 @@
 }
 
 .nome-produto {
-    font-family: 'Abril Fatface', serif;
+    font-family: 'BigJohnPro', serif;
     font-size: 1.6rem;
 }
 
@@ -211,11 +248,13 @@
 .preco {
     background-color: #fca311;
     color: #000;
-    font-weight: 900;
+    font-family: 'BigJohnPro';
+    font-weight: 700;
     font-size: 1.4rem;
-    padding: 8px;
+    padding: 10px 20px;
     border-radius: 5px;
     margin-top: auto;
+    letter-spacing: 4px;
 }
 
 
@@ -240,6 +279,7 @@
 }
 
 .titulo-sobre {
+    font-family: 'FrankyDunkey';
     font-size: clamp(2.5rem, 8vw, 4.5rem);
     color: #fca311;
     margin-bottom: 60px;
@@ -258,6 +298,7 @@
 
 
 .texto-sobre {
+    font-family: 'BigJohnPro';
     font-size: 1.1rem;
     line-height: 1.6;
     font-weight: 300;
@@ -271,19 +312,19 @@
 }
 
 .titulo-local {
-    /* COlocar fonte */
+    font-family: 'FrankyDunkey';
     color: #fef2da;
 }
 
 .subtitulo-local {
-    /* Colocar fonte */
+    font-family: 'BigJohnPro';
     font-weight: 900;
     color: #fca311; 
     font-size: 2rem;
 }
 
 .texto-local {
-    /* Colocar fonte */
+    font-family: 'BigJohnPro';
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.2;
@@ -313,11 +354,12 @@
 
 .titulo-parceria{
     color: #fca311; 
-     /*COlocar fonte  */
+    font-family: 'BigJohnPro';
     font-weight: 900;
 }
 
 .texto-parceria {
+    font-family: 'BigJohnPro';
     font-size: 0.95rem;
     font-weight: 700;
     color: #000;
@@ -337,6 +379,7 @@
 /* Botão cadastrar - cta */
 
 .btn-btn-cadastrar {
+    font-family: 'BigJohnPro';
     background-color: #3d5a3a; 
     border: none;
     font-size: 1.1rem;
@@ -344,6 +387,7 @@
 }
 
 .btn-btn-cadastrar:hover {
+    font-family: 'BigJohnPro';
     transform: scale(1.05);
     background-color: #2d452b;
 }
@@ -357,7 +401,7 @@
 }
 
 .brand-footer {
-    font-family: 'Abril Fatface', serif;
+    font-family: 'FrankyDunkey';
     color: #e8a631; 
 }
 
@@ -365,6 +409,7 @@
 
 /* Estilo dos links da direita */
 .footer-link {
+    font-family: 'BigJohnPro';
     color: #e8a631;
     text-decoration: none;
     font-weight: 900;
