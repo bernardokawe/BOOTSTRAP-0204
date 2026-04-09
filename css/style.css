@@ -39,14 +39,18 @@
 
 /* Imagem no fundo */
 .hero{
-    background-image: url(../img/pizza.jpg);
-    height: 100vh;
-    background-size: cover;
-    padding: 2.2rem;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../img/pizza.jpg) center/cover no-repeat;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff8e1;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 /* Titulo na imagem */
-.titulo {
+.titulo-hero {
     font-family: 'Franky';
     font-size: 8rem;
     text-transform: uppercase;
