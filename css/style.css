@@ -29,6 +29,8 @@
 }
 
 /* Navbar */
+
+/* Logo */
 .navbar .navbar-brand{
     font-family: 'FrankyDunkey';
     color: #b71c1c;
@@ -168,7 +170,7 @@ background-color: rgba(255,255,255,0.05);
 
 
 /* Subnavbar */
-.category-bar {
+.subnav-bar {
     background-color: #b71c1c;
     color: white;
     border-radius: 10px;
