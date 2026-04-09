@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -9,65 +8,50 @@
 
 /* 1. Fonte Display (Títulos e Cupons) */
 @font-face {
-    font-family: 'FrankyDunkey';
-    src: url('../assets/fonts/TheFrankyDunkey.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'Franky';
+    src: url(../assets/fonts/TheFrankyDunkeyPersonalUse.otf) format(opentype);
 }
 
 /* 2. Fonte de Texto - Versão Regular */
 @font-face {
     font-family: 'BigJohnPro';
     src: url('../assets/fonts/BigJohnPro-Regular.otf') format('opentype');
-    font-weight: 400; /* Regular */
 }
 
 /* 3. Fonte de Texto - Versão Bold */
 @font-face {
     font-family: 'BigJohnProBold';
     src: url('../assets/fonts/BigJohnPro-Bold.otf') format('opentype');
-    font-weight: 700; /* Bold */
 }
 
 /* Navbar */
-
-/* Logo */
 .navbar .navbar-brand{
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
     color: #b71c1c;
-    
-    
+    font-size: xx-large;
 }
 
 .navbar-nav{
-    font-family: 'BigJohnPro';
+    font-family: 'BigJohnProBold';
 }
-
-
-
-
-
 
 /* Seção hero */
 
 /* Imagem no fundo */
 .hero{
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../img/pizza.jpg) center/cover no-repeat;
-    height: 500px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    color: #fff8e1;
-    border-radius: 15px;
-    overflow: hidden;
+    background-image: url(../img/pizza.jpg);
+    height: 100vh;
+    background-size: cover;
+    padding: 2.2rem;
 }
 
 /* Titulo na imagem */
-.titulo-hero {
-    font-family: 'FrankyDunkey';
-    font-size: 5rem;
-    line-height: 0.9;
+.titulo {
+    font-family: 'Franky';
+    font-size: 8rem;
     text-transform: uppercase;
     letter-spacing: -2px;
+    color: #ffefcb;
 }
 
 /* Botão */
@@ -76,13 +60,14 @@
     font-family: 'BigJohnProBold';
     background-color: #18542a;
     color: #ffefcb;
-    font-weight: bold;
-    padding: 10px 25px;
+    padding: 10px 10px;
     border: none;
-    text-transform: uppercase;
     border-radius: 4px;
+    font-size: 1.5rem;
     transition: 0.3s;
     margin-top: 20px;
+    width: 15rem;
+    height: 3rem;
 }
 
 .btn-hero:hover{
@@ -93,11 +78,17 @@
    
 }
 
+@media (max-width: 768px) {
+    .titulo {
+    font-size: 4.5rem;
+    }
+}
+
 /* Modal */
 
 /* Fonte do título do modal */
 .modal-brand {
-   font-family: 'FrankyDunkey';
+   font-family: 'Franky';
    color: #e8a631; 
    font-size: 4rem;
 }
@@ -118,17 +109,16 @@ background-color: rgba(255,255,255,0.05);
 
 /* Estilo dos itens da lista de cupons */
 .cupom-img {
-    width: 120px;
+    width: 200px;
     height: auto;
     border-radius: 8px;
 }
 
 .tipo-cupom {
-    font-family: 'BigJohnPro';
-    font-weight: 900;
+    font-family: 'BigJohnProBold';
     color: #e8a631;
     text-transform: lowercase;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .percentual-cupom {
@@ -158,11 +148,12 @@ background-color: rgba(255,255,255,0.05);
 
 .menu-section {
     background-color: #fef2da;
-    padding: 60px 0;
+    padding: 40px 0;
+    height: 100vh;
 }
 
 .titulo-menu {
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
     font-size: 4rem;
     text-align: center;
     margin-bottom: 30px;
@@ -175,10 +166,9 @@ background-color: rgba(255,255,255,0.05);
     color: white;
     border-radius: 10px;
     text-align: center;
-    font-weight: 800;
     padding: 10px 0;
-    font-family: 'BigJohnPro';
-    font-size: 400;
+    font-family: 'BigJohnProBold';
+    font-size: 2rem;
     margin-bottom: 120px; 
 }
 
@@ -249,9 +239,9 @@ background-color: rgba(255,255,255,0.05);
 
 .menu-card p {
     font-family: 'BigJohnPro';
+    font-size: 1.7rem;
     flex-grow: 1;
 }
-
 
     
 
@@ -272,12 +262,22 @@ background-color: rgba(255,255,255,0.05);
 /* Mobile */
 @media (max-width: 768px) {
 
+    .menu-section {
+        height: fit-content;
+    }
+
+    .carousel.slide {
+        display: flex;
+        justify-content: center;
+    }
+
     .cards-row > div {
         margin-bottom: 50px; /* espaço entre os cards */
     }
 
     .menu-card {
-        margin-top: 75px; /* cria espaço entre os cards */
+        margin-top: 60px; /* cria espaço entre os cards */
+        width: 25rem;
     }
 
     .menu-card img {
@@ -286,10 +286,13 @@ background-color: rgba(255,255,255,0.05);
         height: 110px;
     }
 
+    .row.category-bar.mx-2 {
+        display: none;
+    }
 }
 
 .nome-produto {
-    font-family: 'BigJohnPro', serif;
+    font-family: 'BigJohnProBold', serif;
     font-size: 1.6rem;
 }
 
@@ -298,7 +301,7 @@ background-color: rgba(255,255,255,0.05);
 .preco {
     background-color: #fca311;
     color: #000;
-    font-family: 'BigJohnPro';
+    font-family: 'BigJohnProBold';
     font-weight: 700;
     font-size: 1.4rem;
     padding: 10px 20px;
@@ -329,7 +332,7 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .titulo-sobre {
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
     font-size: clamp(2.5rem, 8vw, 4.5rem);
     color: #fca311;
     margin-bottom: 60px;
@@ -341,7 +344,7 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .sobre-img {
-    width: 120px;
+    width: 200px;
     height: auto;
     margin-bottom: 25px;
 }
@@ -349,7 +352,7 @@ background-color: rgba(255,255,255,0.05);
 
 .texto-sobre {
     font-family: 'BigJohnPro';
-    font-size: 1.1rem;
+    font-size: 2rem;
     line-height: 1.6;
     font-weight: 300;
 }
@@ -359,24 +362,23 @@ background-color: rgba(255,255,255,0.05);
 .secao-local {
     background-color: #3d5a3a; 
     color: #fef2da; 
+    height: 100vh;
 }
 
 .titulo-local {
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
     color: #fef2da;
 }
 
 .subtitulo-local {
-    font-family: 'BigJohnPro';
-    font-weight: 900;
+    font-family: 'BigJohnProBold';
     color: #fca311; 
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .texto-local {
     font-family: 'BigJohnPro';
-    font-size: 1.6rem;
-    font-weight: 300;
+    font-size: 2rem;
     line-height: 1.2;
 }
 
@@ -388,7 +390,7 @@ background-color: rgba(255,255,255,0.05);
 
 /* --- Seção - Seja nosso parceiro --- */
 .secao-parceria{
-    background-color: #fef2da; 
+    background-color: #fef2da;
 }
 
 .parceria-img{
@@ -404,42 +406,44 @@ background-color: rgba(255,255,255,0.05);
 
 .titulo-parceria{
     color: #fca311; 
-    font-family: 'BigJohnPro';
-    font-weight: 900;
+    font-family: 'BigJohnProBold';
+    font-size: 3rem;
+    text-align: center;
 }
 
 .texto-parceria {
     font-family: 'BigJohnPro';
-    font-size: 0.95rem;
-    font-weight: 700;
+    font-size: 1.5rem;
     color: #000;
     line-height: 1.4;
+    text-align: center;
 }
 
 /* Estilização formulário */
 
 .form-label {
-    font-size: 0.9rem;
+    font-family: 'BigJohnProBold';
+    font-size: 1.3rem;
     color: #000;
 }
 
 .form-control::placeholder {
     color: #ccc;
-    font-size: 0.85rem;
+    font-size: 1rem;
+    font-family: 'BigJohnPro';
 }
 
 /* Botão cadastrar - cta */
 
 .btn-btn-cadastrar {
-    font-family: 'BigJohnPro';
-    background-color: #3d5f36; 
+    font-family: 'BigJohnProBold';
+    background-color: #3d5a3a; 
     border: none;
     font-size: 1.1rem;
     transition: transform 0.2s;
 }
 
 .btn-btn-cadastrar:hover {
-    font-family: 'BigJohnPro';
     transform: scale(1.05);
     background-color: #55A246;
 }
@@ -453,7 +457,8 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .brand-footer {
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
+    font-size: 4rem;
     color: #e8a631; 
 }
 
