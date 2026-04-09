@@ -180,7 +180,7 @@ background-color: rgba(255,255,255,0.05);
     margin-bottom: 120px; 
 }
 
-/* Ajuste do Carrossel para não cortar as imagens */
+/* Ajuste do Carrossel para não cortar os cards */
 .carousel-inner {
     overflow: visible ; 
     padding-top: 100px; 
@@ -193,10 +193,40 @@ background-color: rgba(255,255,255,0.05);
 }
 
 
+.carousel {
+    padding: 0 10%; /* Cria um "vão" nas laterais */
+    overflow: visible ;
+}
+
+/* Botões carrossel */
+.carousel-control-prev {
+    left: -5% ; /* Move para a esquerda */
+    justify-content: flex-start; /* Alinha o ícone à esquerda da área de clique */
+    width: auto ;
+}
+
+.carousel-control-next {
+    right: -5% ; /* Move para a direita */
+    justify-content: flex-end; /* Alinha o ícone à direita da área de clique */
+    width: auto ;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundinho escuro */
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
 
 
 
 /* Cards */
+
+
 .menu-card {
     background-color: #b71c1c;
     border-radius: 15px;
@@ -209,6 +239,7 @@ background-color: rgba(255,255,255,0.05);
     font-family: 'BigJohnPro';
     display: flex;
     flex-direction: column;
+    width: 100%;
 
 /* Adiciona uma sombra suave para destacar os cards */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
@@ -218,6 +249,7 @@ background-color: rgba(255,255,255,0.05);
     font-family: 'BigJohnPro';
     flex-grow: 1;
 }
+
 
     
 
