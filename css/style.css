@@ -96,6 +96,22 @@
 /* Fonte do título do modal */
 .modal-brand {
    font-family: 'FrankyDunkey';
+   color: #e8a631; 
+   font-size: 4rem;
+}
+
+.conteudo-modal {
+    background-color: #104626; 
+    border-radius: 20px;
+}
+
+.subtitulo-modal {
+    color: #e8a631; 
+    font-weight: 300;
+}
+
+.container-modal {
+background-color: rgba(255,255,255,0.05);
 }
 
 /* Estilo dos itens da lista de cupons */
@@ -366,6 +382,8 @@
     line-height: 1.4;
 }
 
+/* Estilização formulário */
+
 .form-label {
     font-size: 0.9rem;
     color: #000;
@@ -380,7 +398,7 @@
 
 .btn-btn-cadastrar {
     font-family: 'BigJohnPro';
-    background-color: #3d5a3a; 
+    background-color: #3d5f36; 
     border: none;
     font-size: 1.1rem;
     transition: transform 0.2s;
@@ -389,7 +407,7 @@
 .btn-btn-cadastrar:hover {
     font-family: 'BigJohnPro';
     transform: scale(1.05);
-    background-color: #2d452b;
+    background-color: #55A246;
 }
 
 
@@ -407,7 +425,7 @@
 
 
 
-/* Estilo dos links da direita */
+/* Estilo dos navbar da direita */
 .footer-link {
     font-family: 'BigJohnPro';
     color: #e8a631;
