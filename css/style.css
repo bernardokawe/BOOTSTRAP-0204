@@ -9,28 +9,25 @@
 
 /* 1. Fonte Display (Títulos e Cupons) */
 @font-face {
-    font-family: 'FrankyDunkey';
-    src: url('../assets/fonts/TheFrankyDunkey.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'Franky';
+    src: url('../assets/fonts/TheFrankyDunkeyPersonalUse.otf') format('opentype');
 }
 
 /* 2. Fonte de Texto - Versão Regular */
 @font-face {
     font-family: 'BigJohnPro';
-    src: url('../assets/fonts/BigJohnPro-Regular.otf') format('opentype');
-    font-weight: 400; /* Regular */
+    src: url('../assets/fonts/BigJohnPRO-Regular.otf') format('opentype');
 }
 
 /* 3. Fonte de Texto - Versão Bold */
 @font-face {
     font-family: 'BigJohnProBold';
-    src: url('../assets/fonts/BigJohnPro-Bold.otf') format('opentype');
-    font-weight: 700; /* Bold */
+    src: url('../assets/fonts/BigJohnPRO-Bold.otf') format('opentype');
 }
 
 /* Navbar */
 .navbar .navbar-brand{
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
     color: #b71c1c;
     
     
@@ -48,20 +45,16 @@
 /* Seção hero */
 
 /* Imagem no fundo */
-.hero{
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../img/pizza.jpg) center/cover no-repeat;
-    height: 500px;
-    position: relative;
-    display: flex;
-    align-items: center;
+.hero-section {
+    background-image: url('../img/pizza.jpg');
+    background-size: cover;
     color: #fff8e1;
-    border-radius: 15px;
-    overflow: hidden;
+    height: 100vh;
 }
 
 /* Titulo na imagem */
-.titulo-hero {
-    font-family: 'FrankyDunkey';
+.hero-title {
+    font-family: 'Franky';
     font-size: 5rem;
     line-height: 0.9;
     text-transform: uppercase;
@@ -95,7 +88,7 @@
 
 /* Fonte do título do modal */
 .modal-brand {
-   font-family: 'FrankyDunkey';
+   font-family: 'Franky';
    color: #e8a631; 
    font-size: 4rem;
 }
@@ -160,7 +153,7 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .titulo-menu {
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
     font-size: 4rem;
     text-align: center;
     margin-bottom: 30px;
@@ -327,7 +320,7 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .titulo-sobre {
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
     font-size: clamp(2.5rem, 8vw, 4.5rem);
     color: #fca311;
     margin-bottom: 60px;
@@ -360,7 +353,7 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .titulo-local {
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
     color: #fef2da;
 }
 
@@ -451,7 +444,7 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .brand-footer {
-    font-family: 'FrankyDunkey';
+    font-family: 'Franky';
     color: #e8a631; 
 }
 
