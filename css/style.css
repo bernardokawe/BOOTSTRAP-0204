@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -26,18 +25,39 @@
 }
 
 /* Navbar */
+.navbar.navbar-expand-sm.navbar-light.bg-warning {
+    height: 60px;
+}
+
 .navbar .navbar-brand{
     font-family: 'Franky';
+    font-size: 2.5rem;  
     color: #b71c1c;
-    
-    
 }
 
 .navbar-nav{
-    font-family: 'BigJohnPro';
+    font-family: 'BigJohnProBold';
+    font-size: 1.5rem;
 }
 
+/* Responsividade da header */
+@media (max-width: 576px) {
+    .navbar.navbar-expand-sm.navbar-light.bg-warning{
+        padding-top: 0px;
+        margin: 0px;
+    }
 
+    .navbar-nav.ms-auto {
+        background-color: #ffc107;
+        width: 50rem;
+        padding: 10px;
+    }
+
+    .collapse.navbar-collapse {
+        margin-left: -14px;
+        margin-top: -10px;
+    }
+}
 
 
 
@@ -50,43 +70,61 @@
     background-size: cover;
     color: #fff8e1;
     height: 100vh;
+    padding: 2rem;
 }
 
 /* Titulo na imagem */
 .hero-title {
     font-family: 'Franky';
-    font-size: 5rem;
-    line-height: 0.9;
+    font-size: 8rem;
     text-transform: uppercase;
-    letter-spacing: -2px;
 }
 
 /* Botão */
 
 .btn-hero{
     font-family: 'BigJohnProBold';
+    font-size: 2rem;
     background-color: #18542a;
     color: #ffefcb;
-    font-weight: bold;
     padding: 10px 25px;
     border: none;
-    text-transform: uppercase;
     border-radius: 4px;
     transition: 0.3s;
     margin-top: 20px;
+    height: 4rem;
 }
 
 .btn-hero:hover{
     background-color:#1c913f;
     color:#ffefcb;
-    height: 50px;
+    height: 5rem;
     transition: 0.8s;
-   
+}
+
+/* Responsividade da hero section */
+@media (max-width: 576px) {
+    .hero-section {
+        padding-left: 1rem;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .btn-hero {
+        width: 15rem;
+        font-size: 1.6rem;
+    }
 }
 
 /* Modal */
 
 /* Fonte do título do modal */
+.dropdown-custom.mb-4 {
+    width: 22rem;
+}
+
 .modal-brand {
    font-family: 'Franky';
    color: #e8a631; 
@@ -143,6 +181,10 @@ background-color: rgba(255,255,255,0.05);
     .modal-brand {
         font-size: 3rem ;
     }
+
+    .dropdown-custom.mb-4 {
+        width: 19rem;
+    }
 }
 
 /* Seção cardápio (menu) */
@@ -166,10 +208,9 @@ background-color: rgba(255,255,255,0.05);
     color: white;
     border-radius: 10px;
     text-align: center;
-    font-weight: 800;
     padding: 10px 0;
-    font-family: 'BigJohnPro';
-    font-size: 400;
+    font-family: 'BigJohnProBold';
+    font-size: 2rem;
     margin-bottom: 120px; 
 }
 
@@ -230,6 +271,7 @@ background-color: rgba(255,255,255,0.05);
     text-align: center;
     height: 100%;
     font-family: 'BigJohnPro';
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -243,8 +285,6 @@ background-color: rgba(255,255,255,0.05);
     flex-grow: 1;
 }
 
-
-    
 
 
 .menu-card img {
@@ -262,6 +302,9 @@ background-color: rgba(255,255,255,0.05);
 
 /* Mobile */
 @media (max-width: 768px) {
+    .row.category-bar {
+        display: none;
+    }
 
     .cards-row > div {
         margin-bottom: 50px; /* espaço entre os cards */
@@ -280,7 +323,7 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .nome-produto {
-    font-family: 'BigJohnPro', serif;
+    font-family: 'BigJohnProBold', serif;
     font-size: 1.6rem;
 }
 
@@ -289,9 +332,8 @@ background-color: rgba(255,255,255,0.05);
 .preco {
     background-color: #fca311;
     color: #000;
-    font-family: 'BigJohnPro';
-    font-weight: 700;
-    font-size: 1.4rem;
+    font-family: 'BigJohnProBold';
+    font-size: 2rem;
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: auto;
@@ -340,7 +382,7 @@ background-color: rgba(255,255,255,0.05);
 
 .texto-sobre {
     font-family: 'BigJohnPro';
-    font-size: 1.1rem;
+    font-size: 2rem;
     line-height: 1.6;
     font-weight: 300;
 }
@@ -358,16 +400,14 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .subtitulo-local {
-    font-family: 'BigJohnPro';
-    font-weight: 900;
+    font-family: 'BigJohnProBold';
     color: #fca311; 
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .texto-local {
     font-family: 'BigJohnPro';
-    font-size: 1.6rem;
-    font-weight: 300;
+    font-size: 2rem;
     line-height: 1.2;
 }
 
@@ -395,13 +435,13 @@ background-color: rgba(255,255,255,0.05);
 
 .titulo-parceria{
     color: #fca311; 
-    font-family: 'BigJohnPro';
-    font-weight: 900;
+    font-family: 'BigJohnProBold';
+    font-size: 3rem;
 }
 
 .texto-parceria {
     font-family: 'BigJohnPro';
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #000;
     line-height: 1.4;
@@ -410,7 +450,7 @@ background-color: rgba(255,255,255,0.05);
 /* Estilização formulário */
 
 .form-label {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #000;
 }
 
@@ -422,7 +462,7 @@ background-color: rgba(255,255,255,0.05);
 /* Botão cadastrar - cta */
 
 .btn-btn-cadastrar {
-    font-family: 'BigJohnPro';
+    font-family: 'BigJohnProBold';
     background-color: #3d5f36; 
     border: none;
     font-size: 1.1rem;
@@ -430,12 +470,9 @@ background-color: rgba(255,255,255,0.05);
 }
 
 .btn-btn-cadastrar:hover {
-    font-family: 'BigJohnPro';
     transform: scale(1.05);
     background-color: #55A246;
 }
-
-
 
 /* Seção footer */
 
@@ -446,6 +483,7 @@ background-color: rgba(255,255,255,0.05);
 .brand-footer {
     font-family: 'Franky';
     color: #e8a631; 
+    font-size: 4rem;
 }
 
 
