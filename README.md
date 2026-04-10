@@ -11,3 +11,8 @@ Este é um site simples de uma única página criado para um exercício de front
 - Layout responsivo (funciona em mobile e desktop).
 - Seções: Home, Menu, Sobre, Localização, Contato.
 - CSS com Bootstrap.
+
+## 🛠️ Tecnologias Utilizadas
+- HTML5
+- CSS3
+- Bootstrap v5.3.8
